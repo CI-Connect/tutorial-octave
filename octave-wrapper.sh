@@ -1,4 +1,13 @@
 #!/bin/bash
-  module load fftw/3.3.4 atlas lapack hdf5 qhull pcre SparseSuite glpk octave libgfortran
-  module load octave 
+module load libgfortran
+module load fftw
+module load atlas
+module load lapack
+module load hdf5
+module load qhull
+module load pcre
+module load SparseSuite
+module load glpk
+module load octave
+
   octave $1

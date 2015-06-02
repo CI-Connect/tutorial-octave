@@ -1,4 +1,63 @@
-UChicago CI Connect Octave Tutorial
-===========================
-Please refer the document: https://ci-connect.atlassian.net/wiki/display/UCHI/Octave+on+UChicago+CI+Connect
+# Octave - Compute the eigenvalues of a matrix
+
+## Overview
+In the following example, we generate a random matrix and calculate the
+eigenvectors of the matrix using Octave.
+
+## Setup
+### Get tutorial files
+We get the needed files via tutorial command by typing the following:
+
+```
+$ tutorial octave
+Installing octave (osg)...
+Tutorial files installed in ./tutorial-octave.
+Running setup in ./tutorial-octave...
+```
+
+All needed files are located in the tutorial-octave directory
+
+```
+$ cd tutorial-octave
+$ ls
+ex1_matrix.octave    # exercise 1
+ex2_matrix.octave    # exercise 2
+log/                 # directory where the outputs are written
+octave.submit        # job description file for HTCondor
+octave-wrapper.sh    # Wrapper script
+README.md            # Readme file
+```
+
+In the job description file, we execute the wrapper script. The wrapper script
+contains the information about the tasks.  
+
+## Job submission
+We submit the job on the grid using the condor submit command
+
+```
+$ condor_submit octave.submit
+Submitting
+job(s)....................................................................................................
+100 job(s) submitted to cluster 252466.
+```
+
+## Job monitoring
+The  ID for the above job is 252466. Note that we submitted 100 jobs by means of
+the keyword "Queue 100" in the octave.submit file. As a result, we have 100 jobs
+with ID's  252466.0, 252466.1, 252466.2, and so on. You can check the status of the
+jobs 
+
+```
+$ condor_q 252446
+```
+
+or 
+
+```
+$ condor_q username
+```
+
+## Job outputs
+Once the job finished, the output files are in the log directory. The
+eigenvalues are listed in octave.out.JOBID files.
 

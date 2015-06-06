@@ -61,3 +61,5 @@ $ condor_q username
 Once the job finished, the output files are in the log directory. The
 eigenvalues are listed in octave.out.JOBID files.
 
+## Getting Help
+For assistance or questions, please email the OSG User Support team  at `user-support@opensciencegrid.org` or visit the [help desk and community forums](http://support.opensciencegrid.org).

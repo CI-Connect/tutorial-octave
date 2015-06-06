@@ -5,8 +5,9 @@ In the following example, we generate a random matrix and calculate the
 eigenvectors of the matrix using Octave.
 
 ## Setup
+
 ### Get tutorial files
-We get the needed files via tutorial command by typing the following:
+We get the needed files via the `tutorial` command by typing the following:
 
 ```
 $ tutorial octave
@@ -15,7 +16,7 @@ Tutorial files installed in ./tutorial-octave.
 Running setup in ./tutorial-octave...
 ```
 
-All needed files are located in the tutorial-octave directory
+All needed the files are located in the `tutorial-octave/` directory
 
 ```
 $ cd tutorial-octave
@@ -59,7 +60,7 @@ $ condor_q username
 
 ## Job outputs
 Once the job finished, the output files are in the log directory. The
-eigenvalues are listed in octave.out.JOBID files.
+eigenvalues are listed in `octave.out.JOBID` files.
 
 ## Getting Help
 For assistance or questions, please email the OSG User Support team  at `user-support@opensciencegrid.org` or visit the [help desk and community forums](http://support.opensciencegrid.org).

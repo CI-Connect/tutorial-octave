@@ -1,4 +1,5 @@
-# Compute the eigenvalues of a matrix using Octave
+[title]:- Compute the eigenvalues of a matrix using Octave
+[TOC]
 
 ## Overview
 In the following example, we generate a random matrix and calculate the

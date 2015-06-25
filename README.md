@@ -38,7 +38,7 @@ We submit the job on the grid using the condor submit command
 
 ## Job monitoring
 The  ID for the above job is 252466. Note that we submitted 100 jobs by means of
-the keyword "Queue 100" in the octave.submit file. As a result, we have 100 jobs
+the keyword `Queue 100` in the octave.submit file. As a result, we have 100 jobs
 with ID's  252466.0, 252466.1, 252466.2, and so on. You can check the status of the
 jobs 
 
